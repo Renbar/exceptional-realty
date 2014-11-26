@@ -1,0 +1,80 @@
+@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900); 
+@import url(http://fonts.googleapis.com/css?family=Clicker+Script);
+		/*allows you to import code from somewhere else on the web
+		 font-family: 'Elsie Swash Caps', cursive;
+		 font-family: 'Clicker Script', cursive; */
+
+
+/* CSS Syntax:
+
+Selector { 
+	Property: value;
+	property: value;
+	}
+
+*/
+
+/* Type Selector */
+
+p { /* select all <p> elements */
+	 font-size: 1em; /* can be set in ?px, ?pt, ?%, ?em  
+	 						(px= exact amount 
+	 						pt= not exact might depend on the browser 
+	 						%=relative amount, dependent on the element 
+	 						itself and whatever is styled before it 
+	 						em= relative (measurements of the width of the letter M so it depends on the font)
+	 						in most browsers 1em=16px */
+	 line-height: 1.5em
+}
+
+figcaption {
+	/* font-weight: normal;
+	font-size: 0.75em;
+	line-height: 1.5em;
+	font-family: Georgia, "New Times Roman", serif; */
+	font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;;
+	color: #777;
+	text-align: right;
+}
+/* Class selector (applied to as many elements as you'd like- even different kinds) */
+
+/* a class is always started with a "." and then you can give it a name */
+
+.milk-text { /* this will select elements with a class= milk text */
+	font: bold 2.6em 'Elsie Swash Caps', cursive;
+	color: white;
+	text-shadow: 0 2px 3px #000;
+}
+
+/* ID selector (can only apply to one uniqe element per page- and always starts with a "#") */
+
+#logo {/* this will select elements with id= "logo" */
+	background: aqua;
+}
+
+/* Descendent Selector- select descendents within a parent element */
+
+#logo h1 {/*will only style h1 if they are inside an element with the id= "logo" */
+	font-family: "Clicker Script", cursive;
+}
+
+#logo h2{
+	font-family: "Elsie Swash Caps", cursive;
+}
+
+/* Psuedo Selector- select an element based on its relationship with other elements or event states */
+
+#details a:link, #details a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+#details a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+#details a:active {
+	color: red;
+	text-decoration: underline;
+}
